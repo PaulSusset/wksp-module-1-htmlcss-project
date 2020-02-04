@@ -1,0 +1,286 @@
+head{
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+*{
+    /* box-sizing: border-box; should've put this in originally, now it breaks my stuff */
+    
+}
+body{
+    font-family: poppins, "sans serif";
+    margin: 0;
+    max-width: 100%;
+}
+nav{
+    background-color: #3a3633;
+    max-height: 5rem;
+    min-height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+    /* position: relative; */
+}
+
+.nav-element:visited{
+    color: white;;
+}
+nav > a >.icon{
+    display: block;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 4rem;
+    z-index: 3;
+}
+.drop-icon{
+    display: block;
+    height: 30px;
+    width: auto;
+    padding: 17px;
+}
+.dropdown{
+    display: inline-block;
+    /* width: fit-content; */
+    height: 100%;
+    box-sizing: border-box;
+}
+.nav-element{
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 8px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+.list > li {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+.list{
+    background-color: #3a3633;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.nav-element:hover{
+    background-color: #77726e;
+    transition: 0.3s ease-in-out;
+}
+.menu{
+    margin:0;
+    padding:0;
+    display: none;
+}
+.dropdown:hover > .menu{
+    display: block;
+}
+.top-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+    background-image: url(./Assets/falcon-9.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 64px;
+}
+.top-page > h1{
+    font-size: 3rem;
+}
+.dreams{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.top-border{
+    background-color: rgba(211, 211, 211, .6);
+    width: 100%;
+    padding: inherit;
+    margin-bottom: 25%;
+}
+
+.second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.grid-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 385px;
+    margin: 15px;
+    border: solid rgb(211, 211, 211) 1px;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: rgb(211, 211, 211) 1px 1px 3px 3px;
+}
+.it{
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    margin-bottom: 8px;
+    padding: 10px 60px;
+    background-color: #3a3633;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: rgb(211, 211, 211) 1px 1px 3px 3px;
+}
+.it:hover{
+    border: #3a3633 solid 1px;
+    background-color: white;
+    color: black;
+    transition: ease-in-out 0.5s;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.grey{
+    background-color: #3a3633;
+    color: white;
+    padding: 10% 10% 100px 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+}
+.rotato{
+    text-align: center;
+    background-color: #3a3633;
+    color: white;
+    border: white solid 4px;
+    padding: 10px;
+    height: 125px;
+    width: 250px;
+    position: absolute;
+    bottom: -76.5px;
+    z-index: 1;
+}
+.rotato > h3{
+    color:red;
+}
+.rotato:hover{
+    animation: rotate linear 2.5s;
+}
+@keyframes rotate{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+.gradiant{
+    background-image: linear-gradient(to right, white, rgb(30,144,255));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 40vh;
+    width: 100%;
+}
+.right{
+    width: 100%;
+    text-align: right;
+    padding-right: 10%;
+}
+.grid-2{
+    display: grid;
+    grid-template-rows: repeat(6, 11fr);
+    grid-template-columns: 1fr;
+    min-height: 180vh;
+    width: 100%;
+    /* grid-gap: none; */
+    margin: 0;
+    overflow: hidden;
+}
+.hidden{
+    text-align: center;
+    margin:0;
+    color: white;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    background: #3a3633;
+    opacity: .6;
+    visibility: hidden;
+    padding: 28.87% 0;
+    font-size: 1rem;
+    transition: opacity .4s, visibility 0.4s ease-in-out;
+    box-sizing: border-box;
+}
+/* .p-sizing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: inherit; */
+}
+.img-hover{
+    width: 100%;
+    height: auto;
+    /* position: relative; */
+    animation: zoom-out .5s ease-in-out both;
+}
+.test{
+    overflow: hidden;
+}
+.img-hover:hover .hidden{
+    visibility: visible;
+    opacity: .7;
+}
+.img-hover:hover{
+    animation: zoom-in .5s ease-in-out both;
+    transform-origin: center;
+    
+}
+@keyframes zoom-in{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.3);}
+}
+@keyframes zoom-out{
+    0%{transform: scale(1.3);}
+    100%{transform: scale(1);}
+}
+
+.grid-image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.fifth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+#email{
+    width: 208px;
+}
